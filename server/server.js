@@ -5,7 +5,7 @@ import http from "http";
 import { Server } from "socket.io";
 
 import { connectDB } from "./lib/db.js";
-import userRouter from "./routes/UserRoutes.js";
+import userRouter from "./routes/userRoutes.js";
 import messageRouter from "./routes/messageRoutes.js";
 
 const app = express();
