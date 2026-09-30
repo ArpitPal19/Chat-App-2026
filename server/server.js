@@ -55,6 +55,10 @@ app.use("/api/status", (req, res) => {
   res.send("Server is live");
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
 app.use("/api/auth", userRouter);
 app.use("/api/messages", messageRouter);
 
